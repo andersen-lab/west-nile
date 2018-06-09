@@ -2,7 +2,7 @@
 
 We are sequencing West Nile virus from California, with an emphasis on San Diego, Kern, and Sacramento/Yolo counties, to understand how 1) the virus spreads between regions, 2) is maintained locally between seasons, and 3) the factors that promote local outbreaks. Our goal is to generate 600-700 new West Nile virus genomes from infected birds and mosquitoes collected from 2004-2017. 
 
-To date, we have sequenced 90 West Nile virus genomes from San Diego county. The samples were provided by Nikos Garfield and Saran Grewal from the [San Diego County Vector Control Program](http://www.sandiegocounty.gov/deh/pests/vector_disease.html). In the coming weeks, we plan to sequence an additional ~100 West Nile virus genomes from San Diego as well as ~200 genomes from each of Kern and Sacramento/Yolo counties from samples provided by Chris Barker and Ying Fang (University of California, Davis). 
+To date, we have sequenced 90 West Nile virus genomes from San Diego county. The samples were provided by Nikos Garfield and Saran Grewal from the [San Diego County Vector Control Program](http://www.sandiegocounty.gov/deh/pests/vector_disease.html). In the coming weeks, we plan to sequence an additional ~100 West Nile virus genomes from San Diego as well as ~200 genomes from each of Kern and Sacramento/Yolo counties from samples provided by Chris Barker, Sarah Wheeler and Ying Fang (University of California, Davis). 
 
 Stay tuned for new data uploads and preliminary analysis.
 
