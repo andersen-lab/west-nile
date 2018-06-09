@@ -1,6 +1,6 @@
 *Summary: Genomic epidemiology of West Nile virus in California. [Data here](https://github.com/andersen-lab/west-nile).*
 
-We are sequencing West Nile virus from California, with an emphasis on San Diego, Kern, and Sacramento/Yolo counties, to understand how 1) the virus spreads between regions, 2) is maintained locally between seasons, and 3) the factors that promote local outbreaks. Our goal is to generate 600-700 new West Nile virus genomes from infected birds and mosquitoes collected from 2004-2017. 
+We are sequencing West Nile virus from California, with an emphasis on San Diego, Kern, and Sacramento/Yolo counties, to understand how 1) the virus spreads between regions, 2) is maintained locally between seasons, and 3) the factors that promote local outbreaks. Our goal is to generate 600-700 new West Nile virus genomes from infected birds and mosquitoes collected from 2004-2017.
 
 Below is a table showing the count of sequenced  genomes by county.
 
@@ -33,7 +33,9 @@ Below is a table showing the count of sequenced  genomes by county.
 | Missing Metadata(to be updated soon) |        21 |
 | Total                                |       520 |
 
-The samples were provided by Nikos Garfield and Saran Grewal from the [San Diego County Vector Control Program](http://www.sandiegocounty.gov/deh/pests/vector_disease.html). In the coming weeks, we plan to sequence an additional ~100 West Nile virus genomes from San Diego as well as ~150 genomes from Sacramento/Yolo counties from samples provided by Chris Barker, Sarah Wheeler and Ying Fang (University of California, Davis).
+The samples from San Diego county were provided by Nikos Garfield and Saran Grewal from the [San Diego County Vector Control Program](http://www.sandiegocounty.gov/deh/pests/vector_disease.html). The samples from all the other counties came were provided by Chris Barker, Sarah Wheeler and Ying Fang (University of California, Davis).
+
+In the coming weeks, we plan to sequence an additional ~100 West Nile virus genomes from San Diego as well as ~150 genomes from Sacramento/Yolo counties from samples provided by Chris Barker, Sarah Wheeler and Ying Fang.
 
 Stay tuned for new data uploads and preliminary analysis.
 

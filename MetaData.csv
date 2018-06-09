@@ -14,12 +14,12 @@ W012,W14-0125 T,Hawk,"BIC, brain, heart, spleen, kidney",100,4947,2014-10-28,USA
 W013,16-B-0830-B,Hawk,"BIC, brain, heart, spleen, kidney",100,707.2,2016-06-30,USA,CA,San Diego,33.014,-117.053,coding-complete,W013_2016-06-30_USA_CA_SanDiego_-117.053_33.015.fasta
 W014,M14-0148,Culex quinquefasciatus,whole mosquito bodies,100,4593.6,2014-10-31,USA,CA,San Diego,32.838,-117.129,coding-complete,W014_2014-10-31_USA_CA_SanDiego_-117.129_32.839.fasta
 W015,15-Q-0217,Culex quinquefasciatus,whole mosquito bodies,100,4884.7,2017-08-21,USA,CA,San Diego,32.652,-117.107,coding-complete,W015_2015-08-21_USA_CA_SanDiego_-117.107_32.652.fasta
-W016,16-Q-0503,Culex tarsalis,whole mosquito bodies,100,2980,2016-05-16,USA,CA,San Diego,x,,coding-complete,W016_2016-05-16_USA_CA_SanDiego__.fasta
+W016,16-Q-0503,Culex tarsalis,whole mosquito bodies,100,2980,2016-05-16,USA,CA,San Diego,,,coding-complete,W016_2016-05-16_USA_CA_SanDiego__.fasta
 W017,208-0907,Jaybird,Bilateral occular sample,100,4685.6,2007-03-19,USA,CA,San Diego,32.756,-117.072,coding-complete,W017_2007-03-19_USA_CA_SanDiego_-117.072_32.757.fasta
 W018,208-0945,American Crow,Bilateral occular sample,99.31,2721.4,2007-03-19,USA,CA,San Diego,33.238,-117.335,coding-complete,W018_2007-03-19_USA_CA_SanDiego_-117.335_33.239.fasta
 W019,208-0953,American Crow,Bilateral occular sample,100,4310.6,2007-10-02,USA,CA,San Diego,32.785,-116.95,coding-complete,W019_2007-10-02_USA_CA_SanDiego_-116.950_32.786.fasta
 W020,208-0943,American Crow,Bilateral occular sample,100,4127.6,2007-10-02,USA,CA,San Diego,33.245,-117.328,coding-complete,W020_2007-10-02_USA_CA_SanDiego_-117.328_33.246.fasta
-W021,208-1201,Hawk,"BIC, brain, heart, spleen, kidney",98.36,4354.6,2007-10-25,USA,CA,San Diego,x,,coding-complete,W021_2007-10-25_USA_CA_SanDiego__.fasta
+W021,208-1201,Hawk,"BIC, brain, heart, spleen, kidney",98.36,4354.6,2007-10-25,USA,CA,San Diego,,,coding-complete,W021_2007-10-25_USA_CA_SanDiego__.fasta
 W022,208-2252,American Crow,Bilateral occular sample,100,2188.7,2008-02-06,USA,CA,San Diego,32.855,-117.004,coding-complete,W022_2008-02-06_USA_CA_SanDiego_-117.004_32.855.fasta
 W026,208-2824,American Crow,Bilateral occular sample,100,701.2,2008-02-06,USA,CA,San Diego,32.9,-117.158,coding-complete,W026_2008-05-14_USA_CA_SanDiego_-117.158_32.901.fasta
 W028,208-3179,American Crow,Bilateral occular sample,100,608.9,2008-06-11,USA,CA,San Diego,32.958,-117.24,coding-complete,W028_2008-06-11_USA_CA_SanDiego_-117.241_32.958.fasta
