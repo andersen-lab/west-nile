@@ -37,6 +37,8 @@ The samples from San Diego county were provided by Nikos Garfield and Saran Grew
 
 In the coming weeks, we plan to sequence an additional ~100 West Nile virus genomes from San Diego as well as ~150 genomes from Sacramento/Yolo counties from samples provided by Chris Barker, Sarah Wheeler and Ying Fang.
 
+The sequencing is being performed using an amplicon-based sequencing scheme using [Primal](http://primal.zibraproject.org/). Our full protocol is available online [here](https://docs.google.com/document/d/1PilT4w5jHO-ROsE8TL5WBGa0wSCdTHAsNl1LIOYiTgk/edit?usp=sharing). Briefly, after preparing cDNA from WNV samples, we generate 38 amplicons, ~400 bp in length, with ~100 bp overlap between amplicons in two PCR reactions. The two amplicon pools are subsequently combined and subjected to standard Illumina library preparation. Sequencing data is processed using the iVar pipeline which we will be released soon.  
+
 Stay tuned for new data uploads and preliminary analysis.
 
 **Disclaimer**. Please note that this data is still based on work in progress and should be considered preliminary. If you intend to include any of these data in publications, please let us know – otherwise please feel free to download and use without restrictions. We have shared this data with the hope that people will download and use it, as well as scrutinize it so we can improve our methods and analyses. Please contact us if you have any questions or comments – we’ll buy beers for #ResearchParasites that spot flaws and faults in the data and come up with improvements!
