@@ -33,7 +33,7 @@ Below is a table showing the count of sequenced  genomes by county.
 | Lassen          |                1 |
 | Glenn           |                1 |
 | Calaveras       |                1 |
-| Total           |               69 |
+| Total           |              629 |
 
 The samples from San Diego county were provided by Nikos Garfield and Saran Grewal from the [San Diego County Vector Control Program](http://www.sandiegocounty.gov/deh/pests/vector_disease.html). The samples from all the other counties were provided by Chris Barker, Sarah Wheeler and Ying Fang (University of California, Davis).
 
