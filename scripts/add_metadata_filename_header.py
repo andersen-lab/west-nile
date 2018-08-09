@@ -36,7 +36,10 @@ for f in os.listdir(cns_dir):
     fin = open(cns_dir+f, mode="r")
     fin.readline()
     fout = open(cns_dir+new_f, mode="w")
-    fout.write(">"+new_f[:-3]+"\n")
+    if ".tmp" in new_f:
+        fout.write(">"+new_f[:-7]+"\n")
+    else:
+        fout.write(">"+new_f[:-3]+"\n")
     shutil.copyfileobj(fin, fout)
     fout.flush()
     fin.flush()
