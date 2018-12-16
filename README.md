@@ -1,6 +1,6 @@
 *Summary: Genomic epidemiology of West Nile virus in California. [Data here](https://github.com/andersen-lab/west-nile).*
 
-We are sequencing West Nile virus from California, with an emphasis on San Diego, Kern, and Sacramento/Yolo counties, to understand how 1) the virus spreads between regions, 2) is maintained locally between seasons, and 3) the factors that promote local outbreaks. Our goal is to generate 600-700 new West Nile virus genomes from infected birds and mosquitoes collected from 2004-2017.
+We are sequencing West Nile virus from California, with an emphasis on San Diego, Kern, and Sacramento/Yolo counties, to understand how 1) the virus spreads between regions, 2) is maintained locally between seasons, and 3) the factors that promote local outbreaks. Our goal is to generate thousands of new West Nile virus genomes from infected birds and mosquitoes.
 
 Below is a table showing the count of sequenced  genomes by county.
 
