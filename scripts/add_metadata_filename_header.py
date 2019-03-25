@@ -8,28 +8,23 @@ mpl.use('Agg')
 import matplotlib.pyplot as plt
 
 mt_dir = sys.argv[1]           # First argument is path to metadata
+cns_dir = sys.argv[2]           # Second argument is path to directory with consensus sequences that need to be renamed. Consensus sequences need to be named as Wxxx_L*.fa
+county_col_name = sys.argv[3]   # Argument for county location. When la,lon available use "computed_location".
 
 # Remove spaces from location names
 df = pd.read_csv(mt_dir)
 df.columns = df.columns.str.replace(" ","_").str.lower()
-df["county"] = df["county"].str.replace("_", "").str.replace(" ", "")
+# use location computed from lat and lon
+df[county_col_name] = df[county_col_name].str.replace("_", "").str.replace(" ", "")
+# reformat dates
+df["collection_date"] = pd.to_datetime(df["collection_date"], format="%m/%d/%y").dt.strftime("%Y-%m-%d")
 df = df.set_index("scripps_id")
 
-cns_dir = sys.argv[2]           # Second argument is path to directory with consensus sequences that need to be renamed. Consensus sequences need to be named as Wxxx.*.fa
 for f in os.listdir(cns_dir):
-    _ = f.split("_")
-    new_f = ""
-    if len(_) == 7:
-        _d = df.ix[_[0]]
-        _[4] = _d["county"]
-        _[5] = str(round(_d["longitude"], 3))
-        _[6] = str(round(_d["latitude"], 3))
-        new_f = "_".join(_) + ".fa"
-    else:
-        id = f.split(".")[0]
-        _d = df.ix[id]
-        _ = [id, _d["collection_date"], _d["country"], _d["state"], _d["county"], str(round(_d["longitude"], 3)), str(round(_d["latitude"], 3))]
-        new_f = "_".join(_) + ".fa"
+    id = f.split("_")[0]
+    _d = df.ix[id]
+    _ = [id, _d["collection_date"], _d["country"], _d["state"], _d[county_col_name], str(round(_d["longitude"], 3)), str(round(_d["latitude"], 3))]
+    new_f = "_".join(_) + ".fa"
     print(new_f)
     if f == new_f:
         new_f = new_f + ".tmp"
