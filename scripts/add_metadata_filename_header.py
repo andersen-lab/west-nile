@@ -11,6 +11,10 @@ mt_dir = sys.argv[1]           # First argument is path to metadata
 cns_dir = sys.argv[2]           # Second argument is path to directory with consensus sequences that need to be renamed. Consensus sequences need to be named as Wxxx_L*.fa
 county_col_name = sys.argv[3]   # Argument for county location. When la,lon available use "computed_location".
 
+mt_dir="../metadata/metadata.csv"
+cns_dir="../consensus_sequences_libraries/"
+county_col_name="computed_location"
+
 # Remove spaces from location names
 df = pd.read_csv(mt_dir)
 df.columns = df.columns.str.replace(" ","_").str.lower()
@@ -23,7 +27,7 @@ df = df.set_index("scripps_id")
 for f in os.listdir(cns_dir):
     id = f.split("_")[0]
     _d = df.ix[id]
-    _ = [id, _d["collection_date"], _d["country"], _d["state"], _d[county_col_name], str(round(_d["longitude"], 3)), str(round(_d["latitude"], 3))]
+    _ = [id, _d["collection_date"], _d["host"], _d["country"], _d["state"], _d[county_col_name], str(round(_d["longitude"], 3)), str(round(_d["latitude"], 3))]
     new_f = "_".join(_) + ".fa"
     print(new_f)
     if f == new_f:

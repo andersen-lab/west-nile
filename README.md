@@ -6,33 +6,62 @@ Below is a table showing the count of sequenced  genomes by county.
 
 | County          |   Sequence Count |
 | :-------------- | :--------------- |
-| Kern            |              189 |
-| SanDiego        |              179 |
-| Sacramento      |              144 |
-| Yolo            |               35 |
-| LosAngeles      |               18 |
-| Fresno          |               13 |
-| Stanislaus      |               10 |
-| Kings           |                8 |
-| Butte           |                8 |
-| Tulare          |                6 |
-| SanBernardino   |                5 |
-| Pierce          |                4 |
-| Yuba            |                3 |
-| Spokane         |                3 |
-| Shasta          |                3 |
-| Placer          |                3 |
-| Lake            |                3 |
-| ContraCosta     |                3 |
-| Sutter          |                2 |
-| Riverside       |                2 |
-| Merced          |                2 |
-| Alameda         |                2 |
-| Solano          |                1 |
-| SanJoaquin      |                1 |
-| Madera          |                1 |
-| Calaveras       |                1 |
-| Total           |             649  |
+| sandiego      | 206 |
+| kern          | 204 |
+| sacramento    | 153 |
+| yolo          |  42 |
+| losangeles    |  28 |
+| fresno        |  17 |
+| stanislaus    |  13 |
+| butte         |  10 |
+| kings         |   9 |
+| tulare        |   8 |
+| sanbernardino |   6 |
+| riverside     |   6 |
+| contracosta   |   5 |
+| yuba          |   4 |
+| sutter        |   4 |
+| merced        |   4 |
+| shasta        |   3 |
+| placer        |   3 |
+| lake          |   3 |
+| ventura       |   2 |
+| solano        |   2 |
+| madera        |   2 |
+| alameda       |   2 |
+| sanjoaquin    |   1 |
+| lassen        |   1 |
+| glenn         |   1 |
+| calaveras     |   1 |
+| Total         | 740 |
+
+#### Alignment
+
+Alignment were performed using Mafft. The PHI test was used to test for recombination and RDP4 was used to narrow down sequences with potential contamination. These sequences are in consensus_sequences/contaminated\_sequences.
+
+| Name | MAXCHI | CHIMAERA | SISCAN |
+|:-- |:-- |:-- |:--|
+| W162 | +      | -        | +      |
+| W301 | +      | +        | +      |
+
+The following sequences with <50% coverage of the coding region weren't included in the alignment.
+
+| Name                                           | Length |
+|:-- | :-- |
+| Consensus_W052_L1_L2_L3_threshold_0_quality_20 |   4244 |
+| Consensus_W118_L1_threshold_0_quality_20       |      0 |
+| Consensus_W170_L1_threshold_0_quality_20       |   3526 |
+| Consensus_W251_L1_threshold_0_quality_20       |   1862 |
+| Consensus_W327_L1_threshold_0_quality_20       |   5042 |
+| Consensus_W329_L1_threshold_0_quality_20       |   4088 |
+| Consensus_W330_L1_threshold_0_quality_20       |   3255 |
+| Consensus_W336_L1_threshold_0_quality_20       |   1832 |
+| Consensus_W338_L1_threshold_0_quality_20       |   2305 |
+| Consensus_W341_L1_threshold_0_quality_20       |    482 |
+| Consensus_W501_L1_L2_threshold_0_quality_20    |   4421 |
+| Consensus_W662_L1_L2_L3_threshold_0_quality_20 |   4665 |
+| Consensus_W804_L1_L2_threshold_0_quality_20    |   2260 |
+| Consensus_W805_L1_L2_threshold_0_quality_20    |   2937 |
 
 The samples from San Diego county were provided by Nikos Garfield and Saran Grewal from the [San Diego County Vector Control Program](http://www.sandiegocounty.gov/deh/pests/vector_disease.html). 
 The samples from all the other counties in California were provided by Chris Barker, Sarah Wheeler and Ying Fang (University of California, Davis).
