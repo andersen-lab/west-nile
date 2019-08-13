@@ -1,7 +1,15 @@
 #### Summary
 We are sequencing West Nile virus from California, with an emphasis on San Diego, Kern, and Sacramento/Yolo counties, to understand how 1) the virus spreads between regions, 2) is maintained locally between seasons, and 3) the factors that promote local outbreaks. Our goal is to generate thousands of new West Nile virus genomes from infected birds and mosquitoes. This research is part of the [WestNile 4K Project](https://westnile4k.org/).
 
-#### Data
+#### Collaborations and data sources
+
+The samples from San Diego county were provided by Nikos Garfield and Saran Grewal from the [San Diego County Vector Control Program](https://www.sandiegocounty.gov/deh/pests/vector_disease.html). The samples from all the other counties in California, including Sacramento-Yolo and Kern were provided by Ying Fang and Chris Barker from the [Barker Lab, University of California, Davis](https://barkerlab.ucdavis.edu/) and Sarah Wheeler from [Sacramento-Yolo Mosquito and Vector Control Program](https://www.fightthebite.net/).
+
+
+#### Raw Data
+
+The sequencing is being performed using an amplicon-based sequencing scheme using [PrimalSeq](https://www.nature.com/articles/nprot.2017.066). Our full protocol is available online [here](https://docs.google.com/document/d/1PilT4w5jHO-ROsE8TL5WBGa0wSCdTHAsNl1LIOYiTgk/edit?usp=sharing). Sequencing data is aligned using [bwa](https://github.com/lh3/bwa) and processed using [iVar](https://github.com/andersen-lab/ivar) ([Grubaguh et al. Genome Biology 2019](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1618-7)).
+
 Below is a table showing the count of sequenced  genomes by county.
 
 | County          |   Sequence Count |
@@ -35,16 +43,13 @@ Below is a table showing the count of sequenced  genomes by county.
 | calaveras     |   1 |
 | Total         | 740 |
 
-#### Alignment
+##### Alignment statistics
 
-Alignment were performed using Mafft. The PHI test was used to test for recombination and RDP4 was used to narrow down sequences with potential contamination. These sequences are in consensus_sequences/contaminated\_sequences.
+Average depth and percent coverage of genome are available in a [tsv file](metadata/alignment_statistics.tsv).
 
-| Name | MAXCHI | CHIMAERA | SISCAN |
-|:-- |:-- |:-- |:--|
-| W162 | +      | -        | +      |
-| W301 | +      | +        | +      |
+![Alignment statistics](https://raw.githubusercontent.com/andersen-lab/west-nile/master/plots/alignment_stats.png)
 
-The following sequences with <50% coverage of the coding region weren't included in the alignment.
+The following sequences with <50% coverage of the coding region weren't included in downstream analysis. They are highlighted in red in the figure above.
 
 | Name                                           | Length |
 |:-- | :-- |
@@ -63,16 +68,14 @@ The following sequences with <50% coverage of the coding region weren't included
 | Consensus_W804_L1_L2_threshold_0_quality_20    |   2260 |
 | Consensus_W805_L1_L2_threshold_0_quality_20    |   2937 |
 
-The samples from San Diego county were provided by Nikos Garfield and Saran Grewal from the [San Diego County Vector Control Program](http://www.sandiegocounty.gov/deh/pests/vector_disease.html). 
-The samples from all the other counties in California were provided by Chris Barker, Sarah Wheeler and Ying Fang (University of California, Davis).
+#### Multiple sequence alignment
 
-The samples from WA were provided by Krisztian Magori from the Eastern Washington University, Amy Salamone, Wayne Clifford and David Kangiser from the Washongton State Department of Health.
+Alignment were performed using Mafft. The PHI test was used to test for recombination and RDP4 was used to narrow down sequences with potential contamination. These sequences are in consensus_sequences/contaminated\_sequences.
 
-The sequencing is being performed using an amplicon-based sequencing scheme using [Primal](http://primal.zibraproject.org/). Our full protocol is available online [here](https://docs.google.com/document/d/1PilT4w5jHO-ROsE8TL5WBGa0wSCdTHAsNl1LIOYiTgk/edit?usp=sharing). Briefly, after preparing cDNA from WNV samples, we generate 38 amplicons, ~400 bp in length, with ~100 bp overlap between amplicons in two PCR reactions. The two amplicon pools are subsequently combined and subjected to standard Illumina library preparation. Sequencing data is processed using the iVar pipeline which we will be released soon.
-
-Stay tuned for new data uploads and preliminary analysis. 
-
-Please note, that the draft_consensus_sequences folder contains genomes that we are still processing to exlucde potential contamination.
+| Name | MAXCHI | CHIMAERA | SISCAN |
+|:-- |:-- |:-- |:--|
+| W162 | +      | -        | +      |
+| W301 | +      | +        | +      |
 
 **Disclaimer**. Please note that this data is still based on work in progress and should be considered preliminary. If you intend to include any of these data in publications, please let us know – otherwise please feel free to download and use without restrictions. We have shared this data with the hope that people will download and use it, as well as scrutinize it so we can improve our methods and analyses. Please contact us if you have any questions or comments – we’ll buy beers for #ResearchParasites that spot flaws and faults in the data and come up with improvements!
 
