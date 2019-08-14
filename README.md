@@ -45,7 +45,7 @@ Below is a table showing the count of sequenced  genomes by county.
 
 ##### Alignment statistics
 
-Average depth and percent coverage of genome are available in a [tsv file](metadata/alignment_statistics.tsv).
+Average depth and percent coverage of genome are available in a [tsv file](https://github.com/andersen-lab/west-nile-genomics-california/blob/master/metadata/alignment_statistics.tsv).
 
 ![Alignment statistics](https://raw.githubusercontent.com/andersen-lab/west-nile/master/plots/alignment_stats.png)
 
